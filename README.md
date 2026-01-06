@@ -1,5 +1,5 @@
 <div align="center">
-<img src="img/bench_logo.png" border="0" width=600px/>
+<img src="img/bench_logo.png" border="0" width=500px/>
 </div>
 
 ------
