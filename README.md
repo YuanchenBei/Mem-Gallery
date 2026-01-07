@@ -1,5 +1,5 @@
 <div align="center">
-<img src="img/bench_logo.png" border="0" width=500px/>
+<img src="img/bench_logo.png" border="0" width=400px/>
 </div>
 
 ------
@@ -15,34 +15,20 @@
   </a>
 </div>
 
-🚀 The project repository of [*Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents*]().
+🚀 The project repository of *Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents*.
 
 
 
-🌅🌇🌆🏙🌃🌉🌌🎆🌄🏞
 # 🌠 Mem-Gallery
 🌇 **Mem-Gallery** is a multimodal long-term conversational memory benchmark for MLLM agents. Mem-Gallery contains a new multimodal conversational dataset and a unified evaluation framework based on the open-source toolkit 💻 [MemEngine](https://github.com/nuster1128/MemEngine), targeting at providing the community with a comprehensive evaluation for multimodal long-term memory.
 
-🤗 [Dataset](https://huggingface.co/Ethan-Bei/Mem-Gallery) 
-📃 [Paper](https://arxiv.org/abs/2501.12345) 
-
-## 🛫 Requirements
 
 
-
-## 🚀 Quick Start
-**1️⃣ Dataset**
-
-
-## 🪴 Supported Models
-| **Model** | **Paper** | **Source Code** | **Venue** | **Type** |
-|--------|---------|:----------:|:--------------:|:--------------:|
-| Full Memory (Text)   | N/A | [[Link]](https://github.com/nuster1128/MemEngine/blob/master/memengine/memory/FUMemory.py)  | N/A | Textual |
+## 🛫 Datset
 
 
 
-## 💐 Acknowledgements
-The codebase architecture of Mem-Gallery on is based on the excellent repo [MemEngine](https://github.com/nuster1128/MemEngine). 
+
 
 ## 📂 Citation
 ```
