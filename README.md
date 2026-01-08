@@ -22,7 +22,8 @@
 
 
 🔧 **TODO**
-We are now updating the project:
+
+⭐️ We are updating the project:
 - [ ] Benchmark Code 
 - [ ] Result Evaluation Code 
 - [x] Datasets ([Hugging Face](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery))
