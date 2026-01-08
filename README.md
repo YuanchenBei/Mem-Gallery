@@ -8,11 +8,9 @@
     <a href="https://github.com/YuanchenBei/ColdRec"><img src="https://img.shields.io/badge/PRs-welcome-blue.svg"></a>
     <a href="https://github.com/YuanchenBei/ColdRec/blob/main/LICENSE"><img src="https://badgen.net/github/license/YuanchenBei/ColdRec?color=green"></a>
     <a href="https://arxiv.org/abs/2601.03515">
-    <img src="https://img.shields.io/badge/📃%20arXiv-Paper-b31b1b.svg">
-  </a>
-  <a href="https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery">
-    <img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow">
-  </a>
+    <img src="https://img.shields.io/badge/📃%20arXiv-Paper-b31b1b.svg"></a>
+    <a href="https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery">
+    <img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow"></a>
 </div>
 
 🚀 The project repository of *Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents*.
