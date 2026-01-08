@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow"></a>
 </div>
 
-🚀 The project repository of *Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents*.
+🚀 This is the project repository of *Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents*.
 
 ---
 
