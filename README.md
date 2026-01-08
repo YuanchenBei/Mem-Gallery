@@ -10,7 +10,7 @@
     <a href="https://arxiv.org/abs/2601.03515">
     <img src="https://img.shields.io/badge/📃%20arXiv-Paper-b31b1b.svg">
   </a>
-  <a href="https://huggingface.co/Ethan-Bei/Mem-Gallery">
+  <a href="https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery">
     <img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow">
   </a>
 </div>
@@ -24,16 +24,16 @@
 
 
 🔧 **TODO**
-We are now updating the codebase:
+We are now updating the project:
 - [ ] Benchmark Code 
 - [ ] Result Evaluation Code 
-- [x] Datasets ([Hugging Face](https://huggingface.co/Ethan-Bei/Mem-Gallery))
+- [x] Datasets ([Hugging Face](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery))
 
 
 ---
 
-## 🛫 Dataset
-The conversations with their corresponding evaluation QAs are available at the 🤗 [Hugging Face](https://huggingface.co/Ethan-Bei/Mem-Gallery).
+## 📦 Dataset
+The conversations with their corresponding evaluation QAs are available at the 🤗 [Hugging Face](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery).
 
 
 
