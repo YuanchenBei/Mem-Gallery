@@ -18,7 +18,7 @@
 ---
 
 # 🌠 Mem-Gallery
-🌇 **Mem-Gallery** is a multimodal long-term conversational memory benchmark for MLLM agents. Mem-Gallery contains a new multimodal conversational dataset and a unified evaluation framework based on the open-source toolkit 💻 [MemEngine](https://github.com/nuster1128/MemEngine).
+🌇 **Mem-Gallery** is a multimodal long-term conversational memory benchmark for MLLM agents. Mem-Gallery contains a new multimodal conversational dataset and a unified evaluation framework.
 
 
 🔧 **TODO**
