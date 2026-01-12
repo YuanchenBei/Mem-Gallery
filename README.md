@@ -25,8 +25,24 @@
 
 ⭐️ We are updating the project:
 - [ ] Benchmark Code 
-- [ ] Result Evaluation Code 
+- [x] Result Evaluation Code
 - [x] Datasets ([Hugging Face](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery))
+
+---
+## 🛫 Requirements
+Experiments of the benchmark are conducted on the CUDA version 12.2.
+
+``` bash
+# For MLLM deployment
+vllm >= 0.12.0
+# For benchmark running
+torch >= 2.5.1
+transformers >= 4.51.3
+sentence-transformers >= 5.1.2
+accelerate >= 1.12.0
+openai >= 2.11.0
+```
+
 
 
 ---
@@ -41,10 +57,14 @@ The conversations with their corresponding evaluation QAs are available at the �
 
 ## 📝 Citation
 ```bibtex
-@article{bei2025memgallery,
-    title={Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents}, 
-    author={Yuanchen Bei and Tianxin Wei and Xuying Ning and Yanjun Zhao and Zhining Liu and Xiao Lin and Yada Zhu and Hendrik Hamann and Jingrui He and Hanghang Tong},
-    year={2026},
-    journal={arXiv preprint arXiv:2601.03515},
+@article{bei2026mem,
+  title={Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents},
+  author={Bei, Yuanchen and Wei, Tianxin and Ning, Xuying and Zhao, Yanjun and Liu, Zhining and Lin, Xiao and Zhu, Yada and Hamann, Hendrik and He, Jingrui and Tong, Hanghang},
+  journal={arXiv preprint arXiv:2601.03515},
+  year={2026}
 }
 ```
+
+---
+## 💐 Acknowledgements
+The benchmark architecture of Mem-Gallery for baselines is based on the **helpful open-source library [MemEngine](https://github.com/nuster1128/MemEngine)**. Thanks for their pioneering work!
