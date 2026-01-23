@@ -591,7 +591,7 @@ def main(file_path: str, enable_llm_judge: bool = False, judge_config: Dict = No
     data = load_data(file_path)
 
     # Initialize category dictionary
-    # Dataset uses string categories: IE, VTTL, TR, VR, AR, CD, IS, CR, MR
+    # Dataset uses string categories
     category_f1 = defaultdict(list)
     overall_f1 = []
     category_bleu = defaultdict(list)
