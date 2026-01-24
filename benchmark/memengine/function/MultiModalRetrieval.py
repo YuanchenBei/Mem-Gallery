@@ -41,7 +41,7 @@ class MultiModalRetrieval:
         Add an observation embedding to the retriever
         
         Args:
-            obj: str或dict {'text': ..., 'image': ...}
+            obj: str or dict {'text': ..., 'image': ...}
         """
         embedding = self.encoder(obj, return_type='tensor')
         

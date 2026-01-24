@@ -607,7 +607,7 @@ class NGMemoryRecall(BaseRecall):
                 node_norm = torch.nn.functional.normalize(node_embedding, dim=-1)
                 similarity = torch.matmul(query_norm, node_norm.T).item()
                 
-                # 应用degree boosting (matching official implementation)
+                # Apply degree boosting (matching official implementation)
                 node_degree = self.storage.get_node_degree(node_id)
                 degree_boost = 1 + (node_degree * 0.1)
                 boosted_similarity = similarity * degree_boost
