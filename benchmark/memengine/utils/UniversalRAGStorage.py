@@ -14,8 +14,8 @@ class UniversalRAGStorage(BaseStorage):
         
         self._init_encoder(config)
         
-        self.document_index = {}      # {mid: document_feature_tensor}
-        self.image_index = {}          # {mid: image_feature_tensor}
+        self.document_index = {}      
+        self.image_index = {}          
     
     def _init_encoder(self, config):
         """Initialize encoder"""
