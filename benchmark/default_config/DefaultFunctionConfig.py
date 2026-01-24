@@ -114,7 +114,7 @@ Please output each insight in a single line (without index), and do not output a
     'question_number': 3,
     'insight_number': 3,
     'threshold': 0.3,
-    'reflection_topk': DEFAULT_REFLECTION_TOP_K,  # 使用全局常量
+    'reflection_topk': DEFAULT_REFLECTION_TOP_K,
 }
 
 DEFAULT_TRIALREFLECTOR = {
