@@ -21,7 +21,7 @@
 🌇 **Mem-Gallery** is a multimodal long-term conversational memory benchmark for MLLM agents. Mem-Gallery contains a new multimodal conversational dataset and a unified evaluation framework.
 
 ---
-## 🌏 Requirements
+## 🌏 Requirement
 Experiments of the benchmark are conducted on the CUDA version 12.2.
 
 ``` bash
@@ -120,5 +120,5 @@ MemoryOS: https://github.com/BAI-LAB/MemoryOS/blob/main/eval/evalution_loco.py
 ```
 
 ---
-## 💐 Acknowledgements
+## 💐 Acknowledgement
 The benchmark architecture of Mem-Gallery for baselines is based on the **helpful open-source library [MemEngine](https://github.com/nuster1128/MemEngine)**. Thanks for their pioneering work!
