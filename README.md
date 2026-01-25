@@ -44,6 +44,7 @@ The complete multimodal conversations with their corresponding evaluation QAs ar
 ## 🛫 Usage
 
 1️⃣ **Dataset download**
+
 Download the benchmark dataset from 🤗 [Hugging Face](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery).
 
 Create a folder named **"data"** in the benchmark directory, and put the dataset's **"dialog"** and **"image"** folders into it.
@@ -95,6 +96,7 @@ elif args.llm_name == 'gemini-2.5-flash' or args.llm_name == 'gemini-2.5-flash-l
 ```
 
 3️⃣ **Benchmark evaluation**
+
 The main function for running benchmark is located in **run/run_bench.py**. 
 
 You can adjust basic parameters via command-line arguments, such as MLLM (--llm_name) and memory model (--memory_name).
