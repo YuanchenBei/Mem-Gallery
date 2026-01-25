@@ -38,7 +38,7 @@ openai >= 2.11.0
 ---
 
 ## 📦 Dataset
-The conversations with their corresponding evaluation QAs are available at the 🤗 [Hugging Face](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery).
+The complete multimodal conversations with their corresponding evaluation QAs are available at the 🤗 [Hugging Face](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery).
 
 ---
 ## 🛫 Usage
