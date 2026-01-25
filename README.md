@@ -20,15 +20,6 @@
 # 🌠 Mem-Gallery
 🌇 **Mem-Gallery** is a multimodal long-term conversational memory benchmark for MLLM agents. Mem-Gallery contains a new multimodal conversational dataset and a unified evaluation framework.
 
-
-🔧 **TODO**
-
-⭐️ We are updating the project:
-- [ ] Quick-Start Document
-- [ ] Benchmark Code (Updating)
-- [x] Result Evaluation Code
-- [x] Datasets ([Hugging Face](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery))
-
 ---
 ## 🌏 Requirements
 Experiments of the benchmark are conducted on the CUDA version 12.2.
