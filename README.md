@@ -30,7 +30,7 @@
 - [x] Datasets ([Hugging Face](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery))
 
 ---
-## 🛫 Requirements
+## 🌏 Requirements
 Experiments of the benchmark are conducted on the CUDA version 12.2.
 
 ``` bash
@@ -44,15 +44,75 @@ accelerate >= 1.12.0
 openai >= 2.11.0
 ```
 
-
-
 ---
 
 ## 📦 Dataset
 The conversations with their corresponding evaluation QAs are available at the 🤗 [Hugging Face](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery).
 
+---
+## 🛫 Usage
 
+1️⃣ **Dataset download**
+Download the benchmark dataset from 🤗 [Hugging Face](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery).
 
+Create a folder named **"data"** in the benchmark directory, and put the dataset's **"dialog"** and **"image"** folders into it.
+
+2️⃣ **Configure the MLLM backbone and memory model to be tested**
+
+default_config/DefaultEvalConfig.py
+``` python
+'name': '',  # Default judge model, can be overridden via command line [Replace with your model path]
+'api_key': '', # [Replace with your api key]
+'base_url': '', # [Replace with your model's base url]
+```
+
+default_config/DefaultFunctionConfig.py
+``` python
+'name': '', # [Replace with your model path]
+```
+
+default_config/DefaultGlobalConfig.py
+``` python
+DEFAULT_OPENAI_APIKEY = '' # [Replace with your api key]
+DEFAULT_OPENAI_APIBASE = '' # [Replace with your api base url]
+DEFAULT_BACKBONE_PATH = '' # [Replace with your llm backbone path]
+DEFAULT_GME_QWEN2_VL_7B_PATH = '' # [Replace with your GME encoder path]
+```
+
+default_config/DefaultAUGUSTUSMemoryConfig.py
+``` python
+'name': '',  # Default model for concept extraction. [Replace with your LLM model path]
+```
+
+run/run_bench.py
+``` python
+if args.llm_name == 'qwen2-5-7b' or args.llm_name == 'qwen2-5-vl-3b' or args.llm_name == 'qwen2-5-vl-7b' or args.llm_name == 'qwen2-5-vl-32b': # flexible to be extended
+    # local VLLM API
+    OPENAI_APIKEY = '' # [Replace with your API key]
+    OPENAI_APIBASE = '' # [Replace with your API base url]
+    OPENAI_MODEL = f'' # [Replace with your model path, e.g., xxx/{args.llm_name}]
+elif args.llm_name == 'gpt-4o-mini': # flexible to be extended
+    # Openrouter API
+    OPENAI_APIKEY = '' # [Replace with your API key]
+    OPENAI_APIBASE = 'https://openrouter.ai/api/v1' # [Replace with your API base url]
+    OPENAI_MODEL = 'openai/gpt-4o-mini' # [Replace with your model name, e.g., openai/gpt-4o-mini]
+elif args.llm_name == 'gemini-2.5-flash' or args.llm_name == 'gemini-2.5-flash-lite':
+    # Google Gemini API
+    OPENAI_APIKEY = '' # [Replace with your API key]
+    OPENAI_APIBASE = 'https://generativelanguage.googleapis.com/v1beta/openai/' # [Replace with your API base url]
+    OPENAI_MODEL = args.llm_name # [Replace with your model name, e.g., gemini-2.5-flash]  
+```
+
+3️⃣ **Benchmark evaluation**
+The main function for running benchmark is located in **run/run_bench.py**. 
+
+You can adjust basic parameters via command-line arguments, such as MLLM (--llm_name) and memory model (--memory_name).
+
+Currently supports 10+ memory models. For evaluations of A-Mem and MemoryOS, you can modify the official example code based on our run_bench.py ​​file.
+
+A-Mem: https://github.com/WujiangXu/A-mem/blob/main/test_advanced.py
+
+MemoryOS: https://github.com/BAI-LAB/MemoryOS/blob/main/eval/evalution_loco.py
 
 ---
 
